@@ -1,0 +1,20 @@
+$black: black;
+$white: white;
+$none: none;
+body {
+    background-color: $black;
+}
+
+.nav-link {
+    color: $white;
+    background-color: $white;
+}
+
+.navbar-nav {
+    a {
+        background: $none;
+    }
+    li {
+        color: $white;
+    }
+}

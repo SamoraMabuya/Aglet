@@ -1,0 +1,25 @@
+@media only screen and (max-width: 960px) {
+    body {
+        overflow-y: scroll;
+        height: 100vh;
+    }
+    .slides {
+        display: block;
+        width: 100%;
+    }
+    .box {
+        position: relative;
+        .videoTitle,
+        .subtitle {
+            position: relative;
+            font-size: 30px;
+            text-transform: capitalize;
+            color: #ffffff;
+            width: 100%;
+        }
+        // .subtitle {
+        // color: #ffffff;
+        //     transform: translate(10px, -210px);
+        //     position: relative;
+    }
+}

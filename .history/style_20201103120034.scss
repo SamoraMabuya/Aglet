@@ -1,0 +1,15 @@
+$black: black;
+$fontcolor: white;
+$none: none;
+$purple: purple;
+body {
+    background-color: $black;
+}
+
+.navbar-nav {
+    float: right;
+    background-color: aqua;
+    a {
+        color: $fontcolor;
+    }
+}

@@ -1,0 +1,18 @@
+$black: black;
+$white: white;
+$none: tranparent;
+body {
+    background-color: $black;
+}
+
+.nav-link {
+    color: $white;
+    background-color: $white;
+}
+
+.navbar-nav {
+    a {
+        background: $none;
+        color: $white;
+    }
+}

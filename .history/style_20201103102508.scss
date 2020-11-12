@@ -1,0 +1,15 @@
+    $black: black;
+$white: white;
+body {
+    background-color: $black;
+}
+
+.nav-link {
+    color: $white;
+    background-color: $white;
+}
+
+.collapse {
+    li {
+        background-color: $black;
+    }

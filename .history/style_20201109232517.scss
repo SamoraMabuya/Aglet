@@ -1,0 +1,122 @@
+$black: black;
+$fontcolor: white;
+$none: none;
+$flex: flex;
+$marginB100: 100px;
+$marginT100: 100px;
+body,
+html {
+    background-color: $black;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.collapse {
+    width: 100%;
+    float: inline-end;
+    display: $flex;
+    justify-content: flex-end;
+    text-align: right;
+    ul {
+        a {
+            color: $fontcolor;
+        }
+    }
+}
+
+.navbar-toggler-icon {
+    font-size: 20px;
+}
+
+.navbar {
+    margin: 20px 20px 0px 0px;
+}
+
+.logo {
+    width: 97.3px;
+    height: 23px;
+    margin: 0px 0px 0px 20px;
+}
+
+.wrapper {
+    overflow-x: scroll;
+}
+
+.slides {
+    width: 400%;
+    height: auto;
+    overflow-x: hidden;
+    display: flex;
+    margin-top: $marginT100;
+    margin-bottom: $marginB100;
+}
+
+.box {
+    float: left;
+    width: 100%;
+    z-index: 0;
+    height: auto;
+    margin: 0;
+}
+
+.box video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+// 
+.videoTitle {
+    color: $fontcolor;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0px 0px 15px;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 0px 0px 0px 15px;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 40px;
+    height: 3px;
+    margin-bottom: $marginB100;
+    margin-top: $marginT100;
+    transform: translateY(140px);
+    position: absolute;
+}
+
+.wrapper::-webkit-scrollbar-button {
+    width: 1px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background: rgb(122, 119, 115);
+    margin: 580px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(140px);
+    position: absolute;
+}
+
+.wrapper::-webkit-scrollbar-track-piece {
+    width: 40px;
+    height: 102px;
+    position: absolute;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: rgb(248, 241, 241);
+    border-radius: 20px;
+    position: absolute;
+    // max-width: 80px;
+    width: 10px;
+    height: 12px;
+}
+
+// @import "mobilerespond";

@@ -1,0 +1,97 @@
+    @media only screen and (max-width: 1028px) {
+        body {
+            overflow-y: scroll;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+        a {
+            color: yellow;
+        }
+        .wrapper {
+            margin-top: -200px;
+            opacity: 10%;
+        }
+        .slides {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+        }
+        .box {
+            position: relative;
+        }
+        .videoTitle,
+        .subtitle {
+            text-transform: capitalize;
+            color: #ffffff;
+            width: 100%;
+        }
+        video {
+            z-index: -2;
+        }
+        .videoTitle {
+            font-size: 60px;
+            bottom: 40%;
+        }
+        .subtitle {
+            font-size: 35px;
+            bottom: 35%;
+        }
+        .heading {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: -40%;
+            left: 10%;
+        }
+        .logo {
+            display: none;
+        }
+        .navbar {
+            z-index: 3;
+        }
+        .icon {
+            z-index: 3;
+            color: #ffff;
+            font-size: 25px;
+            margin: 0px 30px 0px 0px;
+            cursor: pointer;
+        }
+        .close {
+            z-index: 3;
+            color: #ffff;
+            font-size: 25px;
+            margin: 0px 30px 0px 0px;
+        }
+        .nav-links {
+            width: 75%;
+            height: 100vh;
+            z-index: 3;
+            display: block;
+            background-color: #fff;
+            top: 0px;
+            position: absolute;
+            color: #0000;
+            right: 0px;
+            text-align: start;
+            padding: 380px 0px 0px 70px;
+            transition: all .5s;
+            transform: translateX(100%);
+        }
+        .nav-item {
+            z-index: 4;
+            width: 100%;
+            padding: 10px 0px 0px 0px;
+            span {
+                width: 100%;
+                color: #000;
+                font-size: 35px;
+                font-weight: 800px;
+            }
+            .show {
+                transform: translate(100%, 0px);
+            }
+        }
+        .reveal {
+            transform: translate(0%, 0px), ;
+        }
+    }

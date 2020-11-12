@@ -1,0 +1,17 @@
+$black: black;
+$white: white;
+$none: none;
+body {
+    background-color: $black;
+}
+
+.navbar-nav {
+    a {
+        color: $white;
+        background: $none;
+    }
+    li {
+        color: $white;
+        color: $white;
+    }
+}

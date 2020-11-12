@@ -1,0 +1,23 @@
+$black: black;
+$fontcolor: white;
+$none: none;
+body {
+    background-color: $black;
+}
+
+.collapse {
+    width: 100%;
+    float: inline-end;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    ul {
+        a {
+            color: $fontcolor;
+        }
+    }
+}
+
+.navbar-toggler {
+    background: purple;
+}

@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+}
+
+.nav__list {
+    position: fixed;
+    z-index: 100;
+    top: 35px;
+    right: 0;
+    margin-right: 44px;
+    height: 0;
+}

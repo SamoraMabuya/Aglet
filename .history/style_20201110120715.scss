@@ -1,0 +1,119 @@
+$black: black;
+$fontcolor: white;
+$none: none;
+$flex: flex;
+$marginB100: 100px;
+$marginT100: 100px;
+$hidden: hidden;
+$auto: auto;
+body,
+html {
+    background-color: $black;
+    overflow: $hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: $flex;
+    li {
+        margin: 0px 10px 0px 0px;
+        list-style: none;
+        a {
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+
+.navbar {
+    margin: 40px 0px 0px 20px;
+}
+
+.collapse {
+    width: 100%;
+    float: inline-end;
+    display: $flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 0px 0px 0px 15px;
+    ul {
+        a {
+            color: $fontcolor;
+        }
+    }
+}
+
+.logo {
+    width: 97.3px;
+    height: 23px;
+    margin: 0px 0px 0px 20px;
+}
+
+.wrapper {
+    overflow-x: scroll;
+    margin-top: 70px;
+}
+
+.slides {
+    width: 450%;
+    height: $auto;
+    overflow-x: $hidden;
+    display: flex;
+    margin-top: $marginT100;
+    margin-bottom: $marginB100;
+}
+
+.box {
+    float: left;
+    width: 100%;
+    z-index: 0;
+    height: $auto;
+    margin: 0;
+}
+
+.box video {
+    width: 100%;
+    height: $auto;
+    margin: 0;
+}
+
+.videoTitle {
+    color: $fontcolor;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0px 0px 15px;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 0px 0px 0px 15px;
+}
+
+.wrapper::-webkit-scrollbar {
+    height: 2px;
+    margin-bottom: $marginB100;
+    margin-top: $marginT100;
+    transform: translateY(140px);
+    position: absolute;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background: rgb(122, 119, 115);
+    margin-left: 500px;
+    margin-right: 500px;
+    width: 20px;
+    transform: translateY(140px);
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: rgb(248, 241, 241);
+    border-radius: 20px;
+}
+
+@import "mobilerespond";

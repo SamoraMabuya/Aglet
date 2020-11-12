@@ -1,0 +1,17 @@
+$black: black;
+$white: white;
+$none: tranparent;
+$purple: purple;
+body {
+    background-color: $black;
+}
+
+.navbar-nav {
+    a {
+        color: $purple;
+        background: $none;
+    }
+    li {
+        color: $purple;
+    }
+}

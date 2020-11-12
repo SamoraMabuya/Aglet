@@ -1,0 +1,14 @@
+$black: black;
+$white: white;
+body {
+    background-color: $black;
+}
+
+.nav-link {
+    color: $white;
+    background-color: $white;
+}
+
+li {
+    background-color: $black;
+}

@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+.collapse {
+    width: 100%;
+    float: inline-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.collapse ul a {
+    color: white;
+}
+
+
+/*# sourceMappingURL=style.css.map */

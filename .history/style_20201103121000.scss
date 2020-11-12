@@ -1,0 +1,31 @@
+$black: black;
+$fontcolor: white;
+$none: none;
+body {
+    background-color: $black;
+}
+
+.navbar-nav {
+    float: inline-end;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    background-color: purple;
+    a {
+        color: $fontcolor;
+    }
+    li {
+        float: right;
+        display: flex;
+        justify-content: right;
+        text-align: right;
+    }
+}
+
+.collapse {
+    width: 100%;
+    float: inline-end;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}

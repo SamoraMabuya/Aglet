@@ -1,0 +1,28 @@
+$black: black;
+$fontcolor: white;
+$none: none;
+body {
+    background-color: $black;
+}
+
+.navbar-nav {
+    float: right;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    width: 100%;
+    background-color: purple;
+    a {
+        color: $fontcolor;
+    }
+    li {
+        float: right;
+        display: flex;
+        justify-content: right;
+        text-align: right;
+    }
+}
+
+.navbar {
+    width: 100%;
+}

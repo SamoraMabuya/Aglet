@@ -1,0 +1,120 @@
+$black: black;
+$fontcolor: white;
+$none: none;
+$flex: flex;
+$marginB100: 100px;
+$marginT100: 100px;
+body {
+    background-color: $black;
+    overflow: hidden;
+}
+
+.collapse {
+    width: 100%;
+    float: inline-end;
+    display: $flex;
+    justify-content: flex-end;
+    text-align: right;
+    ul {
+        a {
+            color: $fontcolor;
+        }
+    }
+}
+
+.navbar-toggler-icon {
+    font-size: 20px;
+}
+
+.navbar {
+    margin: 20px 20px 0px 0px;
+}
+
+.logo {
+    width: 97.3px;
+    height: 23px;
+    margin: 0px 0px 0px 20px;
+}
+
+// video style
+.slide-container {
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.box {
+    width: 100%;
+    height: 300px;
+    margin-bottom: $marginB100;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.previews {
+    width: 500px;
+    height: 100%;
+    border: none;
+    margin: 15px;
+}
+
+.slides {
+    display: $flex;
+    overflow-x: scroll;
+    margin-top: $marginT100;
+    margin-bottom: $marginB100;
+    // width: 100%;
+    height: 100%;
+    height: auto;
+    width: 100%;
+    touch-action: pan-y;
+}
+
+.slides::-webkit-scrollbar {
+    width: 40px;
+    height: 3px;
+    margin-bottom: $marginB100;
+    margin-top: $marginT100;
+    transform: translateY(140px);
+}
+
+.slides::-webkit-scrollbar-button {
+    width: 1px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: rgb(172, 168, 163);
+    margin: 580px;
+    width: 100px;
+    height: 100px;
+    transform: translateY(140px);
+}
+
+.slides::-webkit-scrollbar-track-piece {
+    width: 40px;
+    height: 202px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+    position: absolute;
+    max-width: 80px;
+    width: 40px;
+    height: 2px;
+}
+
+.videoTitle {
+    color: $fontcolor;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0px 0px 15px;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 0px 0px 0px 15px;
+}
+
+@import "mobilerespond";

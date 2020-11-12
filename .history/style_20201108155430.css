@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+}
+
+.collapse {
+    width: 100%;
+    float: inline-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.collapse ul a {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    font-size: 20px;
+}
+
+.navbar {
+    margin: 20px 20px 0px 0px;
+}
+
+.logo {
+    width: 97.3px;
+    height: 23px;
+    margin: 0px 0px 0px 20px;
+}
+
+.box {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+.previews {
+    width: 500px;
+    height: 100%;
+    border: none;
+}
+
+.slides {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-size: 30px;
+}
+
+.slides::-webkit-scrollbar {
+    width: 40px;
+    height: 3px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.slides::-webkit-scrollbar-button {
+    width: 1px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: #aca8a3;
+    margin: 580px;
+    width: 100px;
+    height: 100px;
+}
+
+.slides::-webkit-scrollbar-track-piece {
+    width: 40px;
+    height: 202px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+    position: absolute;
+    max-width: 80px;
+    width: 40px;
+    height: 2px;
+}
+
+.videoTitle {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0px 0px 15px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 0px 0px 0px 15px;
+}
+
+@media only screen and (max-width: 960px) {
+    .slides {
+        display: block;
+    }
+    .previews {
+        width: 100%;
+    }
+    .box {
+        width: 100%;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */
