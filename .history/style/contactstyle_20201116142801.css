@@ -1,0 +1,89 @@
+.images {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body,
+html {
+  background-color: #0000;
+  overflow: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0px 0px 0px;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 0px 0px;
+}
+
+.nav-links li {
+  margin: 0px 30px 0px 0px;
+  list-style: none;
+}
+
+.nav-links li a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  position: relative;
+}
+
+.active {
+  border-bottom: 2px solid #ffff;
+}
+
+.nav-link:not(.active):after {
+  content: '';
+  border-bottom: 2px solid #ffff;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  position: absolute;
+}
+
+.nav-link:hover:after {
+  right: 0;
+}
+
+.collapse {
+  width: 100%;
+  float: inline-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+  margin: 0px 30px 0px 0px;
+}
+
+.logo {
+  width: 97.3px;
+  height: 23px;
+  margin: 0px 0px 0px 40px;
+}
+/*# sourceMappingURL=contactstyle.css.map */
