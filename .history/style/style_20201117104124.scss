@@ -1,0 +1,87 @@
+$fontcolor: white;
+$hidden: hidden;
+$auto: auto;
+$abs: absolute;
+$scrollY: translateY(140px);
+$marginTitles: 0px 0px 0px 15px;
+@import "navstyle";
+.logo {
+    width: 97.3px;
+    height: 23px;
+    margin: 0px 0px 0px 40px;
+}
+
+.wrapper {
+    overflow-x: scroll;
+    margin-top: 70px;
+}
+
+.slides {
+    width: 450%;
+    height: auto;
+    overflow-x: $hidden;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.box {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.darken {
+    opacity: 20%;
+}
+
+.previews {
+    z-index: 2;
+}
+
+.box video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+video source {
+    z-index: -2;
+}
+
+.videoTitle {
+    color: $fontcolor;
+    font-size: 18px;
+    font-weight: bold;
+    margin: $marginTitles;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: $marginTitles;
+}
+
+.wrapper::-webkit-scrollbar {
+    height: 2px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    transform: $scrollY;
+    position: absolute;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background: rgb(122, 119, 115);
+    margin-left: 500px;
+    margin-right: 500px;
+    width: 20px;
+    transform: $scrollY;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+@import "mobilerespond";

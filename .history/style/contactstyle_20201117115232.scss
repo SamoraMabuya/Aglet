@@ -1,0 +1,58 @@
+@import "navstyle";
+.logo {
+    width: 97.3px;
+    height: 23px;
+    margin: 0px 0px 0px 40px;
+}
+
+.image {
+    width: 480px;
+    height: 100vh;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: translate(150px, -40px);
+}
+
+h1 {
+    position: absolute;
+    color: #423b3b;
+    font-size: 14rem;
+    transform: translate(380px, -60px);
+    z-index: 1;
+}
+
+p {
+    color: #ffff;
+    font-size: 20px;
+    position: absolute;
+    transform: translate(715px, -440px);
+    width: 100%;
+    a {
+        color: #ffff;
+    }
+}
+
+
+}
+
+}
+
+}
+.logoW {
+    height: 30px;
+    transform: translate(550px, -215px);
+    margin: 70px;
+    border-radius: 10px;
+    display: inline-flex;
+}
+.twitterIcon {
+    margin: 2px 0px 0px 6px;
+}
+.googleIcon {
+    margin: 0px 0px 0px -120px;
+}

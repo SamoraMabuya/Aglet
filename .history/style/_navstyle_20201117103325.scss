@@ -1,0 +1,53 @@
+$right-margin: 0px 30px 0px 0px;
+$Underlinelinks: 2px solid #ffff;
+body {
+    background-color: #000;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    margin: 30px 0px 0px 0px;
+}
+
+.nav-links {
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    li {
+        margin: $right-margin;
+        list-style: none;
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #ffff;
+            position: relative;
+        }
+    }
+}
+
+.active {
+    border-bottom: $Underlinelinks;
+}
+
+.nav-link:not(.active):after {
+    content: '';
+    border-bottom: $Underlinelinks;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    transition: all 500ms;
+    position: absolute;
+}
+
+.nav-link:hover:after {
+    right: 0;
+}
+
+.collapse {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: $right-margin;
+}

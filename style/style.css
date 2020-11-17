@@ -1,13 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 body {
-  background-color: black;
+  background-color: #000;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .navbar {
@@ -21,7 +15,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px 0px 0px 0px;
 }
 
 .nav-links li {
@@ -33,7 +26,6 @@ body {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
   color: #ffff;
   position: relative;
 }
@@ -59,14 +51,12 @@ body {
 
 .collapse {
   width: 100%;
-  float: inline-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  text-align: right;
   margin: 0px 30px 0px 0px;
 }
 
@@ -95,7 +85,6 @@ body {
 .box {
   float: left;
   width: 100%;
-  z-index: 0;
   height: auto;
   margin: 0;
 }
@@ -112,9 +101,6 @@ body {
   width: 100%;
   height: auto;
   margin: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  width: 100%;
 }
 
 video source {
@@ -122,7 +108,7 @@ video source {
 }
 
 .videoTitle {
-  color: white;
+  color: #fff;
   font-size: 18px;
   font-weight: bold;
   margin: 0px 0px 0px 15px;
@@ -153,19 +139,11 @@ video source {
 }
 
 .wrapper::-webkit-scrollbar-thumb {
-  background-color: #f8f1f1;
+  background-color: #fff;
   border-radius: 20px;
 }
 
 @media only screen and (max-width: 1028px) {
-  body {
-    overflow-y: scroll;
-    height: 100vh;
-    overflow-x: hidden;
-  }
-  a {
-    color: yellow;
-  }
   .wrapper {
     margin-top: -200px;
   }
@@ -201,11 +179,11 @@ video source {
     bottom: -40%;
     left: 10%;
   }
+}
+
+@media only screen and (max-width: 1024px) {
   .logo {
     display: none;
-  }
-  .navbar {
-    z-index: 3;
   }
   .icon {
     z-index: 3;
@@ -224,31 +202,34 @@ video source {
   }
   .close i {
     color: black;
-    font-weight: reg;
   }
   .nav-links {
     width: 75%;
     height: 100vh;
-    z-index: 3;
+    z-index: 101;
     display: block;
     background-color: #fff;
-    top: 0px;
-    position: absolute;
+    top: -18px;
+    position: fixed;
     color: #0000;
-    right: 0px;
+    right: 0;
     text-align: start;
-    padding: 380px 0px 0px 70px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    -webkit-transition-timing-function: ease-out;
-            transition-timing-function: ease-out;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    padding: 380px 0px 0px 0px;
+    -webkit-transition: -webkit-transform 1200ms cubic-bezier(0.16, 1.08, 0.38, 0.98);
+    transition: -webkit-transform 1200ms cubic-bezier(0.16, 1.08, 0.38, 0.98);
+    transition: transform 1200ms cubic-bezier(0.16, 1.08, 0.38, 0.98);
+    transition: transform 1200ms cubic-bezier(0.16, 1.08, 0.38, 0.98), -webkit-transform 1200ms cubic-bezier(0.16, 1.08, 0.38, 0.98);
+    -webkit-transition-duration: 1200ms;
+            transition-duration: 1200ms;
+    -webkit-transition-timing-function: cubic-bezier(0.16, 1.08, 0.38, 0.98);
+            transition-timing-function: cubic-bezier(0.16, 1.08, 0.38, 0.98);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
   }
   .nav-item {
-    z-index: 4;
     width: 100%;
-    padding: 10px 0px 0px 0px;
+    -webkit-transform: translate(30px, 30px);
+            transform: translate(30px, 30px);
   }
   .nav-item span {
     width: 100%;
@@ -263,6 +244,12 @@ video source {
   .hide {
     -webkit-transform: translate(100%, 0px);
             transform: translate(100%, 0px);
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .nav-links {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
